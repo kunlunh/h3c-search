@@ -1,0 +1,100 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+
+    <title>H3C Search</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="static/css/sticky-footer-navbar.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <header>
+      <!-- Fixed navbar -->
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">Fixed navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+          <form class="form-inline mt-2 mt-md-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Begin page content -->
+    <main role="main" class="container">
+      <h1 class="mt-5">查询</h1>
+	  
+    <form class="form-signin" onsubmit="return false" action="##" method="post">
+      
+      <h1 class="h3 mb-3 font-weight-normal">请选择</h1>
+      <label for="buildingSelect" class="sr-only">楼层选择</label>
+		 <select class="form-control" id="buildingSelect">
+		  <option value="A1">A1</option>
+		  <option value="A2">A2</option>
+		  <option value="A3">A3</option>
+		  <option value="A4">A4</option>
+		  <option value="A5">A5</option>
+		  <option value="A6">A6</option>
+		  <option value="B1">B1</option>
+		  <option value="B2">B2</option>
+		  <option value="B3">B3</option>
+		  <option value="B4">B4</option>
+		  <option value="Admin-5f">Admin-5f</option>
+		</select>
+      <label for="macinput" class="sr-only">MAC地址</label>
+      <input type="text" id="macinput" class="form-control" placeholder="请输入MAC地址" required>
+      <button id="tet" class="btn btn-lg btn-primary btn-block" type="submit">查询</button>
+    </form>
+    
+	  
+	<h2>查询结果</h2>
+	<div id="hide">
+		<h5><div id=result>?</div></h5>
+		
+		<h5><ul id="ul1"></ul></h5>
+	
+	<div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <span class="text-muted">Place sticky footer content here.</span>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="static/js/jquery-3.3.1.min.js" ></script>
+    <script>window.jQuery || document.write('<script src="static/js/jquery.min.js"><\/script>')</script>
+    <script src="static/js/popper.min.js"></script>
+	<script src="static/js/main.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+  </body>
+</html>
