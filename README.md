@@ -2,10 +2,10 @@
 
 ## 1.Install the requirements
 
-'''
+```
 pip install paramiko
 pip install flask
-'''
+```
 
 ## 2.Run it
 python h3csearch.py
