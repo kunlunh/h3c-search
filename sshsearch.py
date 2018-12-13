@@ -8,8 +8,8 @@ def swsearch(hostname,mac,tag) :
 	result_dic = {}
 	if tag == 'v7' :
 		hostname = hostname
-		username = 'staticadmin'
-		password = 'staticpassword'
+		username = 'netadmin'
+		password = 'Net!@#'
 		paramiko.util.log_to_file('syslogin.log')     #发送paramiko日志到syslogin.log文件
 		searchcmd = 'dis mac-address | include ' + mac
 	
@@ -23,7 +23,7 @@ def swsearch(hostname,mac,tag) :
 	
 	
 		if len(result1) <= 8 :
-			return 'Not Found'
+			result_dic[1] = 'Not Found'
 
 		else :
 			i = 0
@@ -72,7 +72,7 @@ def swsearch(hostname,mac,tag) :
 		length = len(result1)
 		del result1[length-1]
 		if length <= 9 :
-			print('Not Found')
+			result_dic[1] = 'Not Found'
 
 		else :
 			i = 0

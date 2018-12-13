@@ -49,7 +49,7 @@
     <!-- Begin page content -->
     <main role="main" class="container">
       <h1 class="mt-5">查询</h1>
-	  
+	  <h4 class="mt-2">MAC地址以小写形式输入最后4/6位，如MAC为1C-1B-0D-FC-E1-02,请输入e102或者fc-e102</h4>
     <form class="form-signin" onsubmit="return false" action="##" method="post">
       
       <h1 class="h3 mb-3 font-weight-normal">请选择</h1>
@@ -59,13 +59,8 @@
 		  <option value="A2">A2</option>
 		  <option value="A3">A3</option>
 		  <option value="A4">A4</option>
-		  <option value="A5">A5</option>
-		  <option value="A6">A6</option>
 		  <option value="B1">B1</option>
 		  <option value="B2">B2</option>
-		  <option value="B3">B3</option>
-		  <option value="B4">B4</option>
-		  <option value="Admin-5f">Admin-5f</option>
 		</select>
       <label for="macinput" class="sr-only">MAC地址</label>
       <input type="text" id="macinput" class="form-control" placeholder="请输入MAC地址" required>
@@ -73,7 +68,8 @@
     </form>
     
 	  
-	<h2>查询结果</h2>
+	<h2 id="search">查询结果</h2>
+	<h4 id="notify" class="mt-2"></h4>
 	<div id="hide">
 		<h5><div id=result>?</div></h5>
 		
